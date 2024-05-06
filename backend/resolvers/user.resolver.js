@@ -20,8 +20,8 @@ const userResolver = {
 				const hashedPassword = await bcrypt.hash(password, salt);
 
 				// https://avatar-placeholder.iran.liara.run/
-				const boyProfilePic = `https://avatar.iran.liara.run/public/boy?username=${username}`;
-				const girlProfilePic = `https://avatar.iran.liara.run/public/girl?username=${username}`;
+				const boyProfilePic = `https://i.pravatar.cc/150?u=${username}`;
+				const girlProfilePic = `https://i.pravatar.cc/150?u=${username}`
 
 				const newUser = new User({
 					username,
